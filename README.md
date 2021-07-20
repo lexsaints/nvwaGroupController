@@ -8,12 +8,15 @@
 ## 使用方法
 1. 下载代码
 `git clone https://github.com/zhongxia245/weiqunkong.git`
-2. 使用Pycharm打开项目
+or
+下载zip代码包,解压出来
+2. 进入主目录下
 3. 安装依赖`pip install -r requirements.txt`
-4. 运行项目
-5. 进入web文件夹，执行`npm serve`(需要先安装nodejs)
-6. 浏览器打开`127.0.0.1:8000`
-7. 手机连接到电脑，打开开发者模式，并信任电脑(电脑要安装adb)
+5. 进入web文件夹,删除node_modules目录
+6. 在web目录下：执行`npm install`
+7. 在web目录下：执行`npm run serve`(需要先安装nodejs)
+8. 浏览器打开`http://127.0.0.1:8000`
+9. 手机连接到电脑，打开开发者模式，并信任电脑(电脑要安装adb)
   * 执行`adb push Main.dex /sdcard/Main.dex`
   * 执行`adb shell`
   * 执行命令 `export CLASSPATH=/sdcard/Main.dex`
